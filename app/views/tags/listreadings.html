@@ -1,0 +1,50 @@
+<table class="table is-bordered">
+  <tbody>
+    <tr class="content is-small">
+      <th class="content is-black">Latest Code</th>
+      <th class="content is-black">Latest Temperature</th>
+      <th class="content is-black">Latest Wind Speed</th>
+      <th class="content is-black">Latest Pressure</th>
+    </tr>
+    <tr>
+      <td class="content is-large is-black">
+        ${_station.listLatestReading().code}
+      </td>
+      <td class="content is-large is-black">
+        ${_station.listLatestReading().temp}
+      </td>
+      <td class="content is-large is-black">
+        ${_station.listLatestReading().windSpeed}
+      </td>
+      <td class="content is-large is-black">
+        ${_station.listLatestReading().pressure}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="table is-bordered">
+  <tbody>
+    <tr>
+      <th>Code</th>
+      <th>Temperature</th>
+      <th>Wind Speed</th>
+      <th>Pressure</th>
+    </tr>
+    #{list items:_station.readings, as:'reading'}
+    <tr>
+      <td>
+        ${reading.code}
+      </td>
+      <td>
+        ${reading.temp}
+      </td>
+      <td>
+        ${reading.windSpeed}
+      </td>
+      <td>
+        ${reading.pressure}
+      </td>
+    </tr>
+    #{/list}
+  </tbody>
+</table>

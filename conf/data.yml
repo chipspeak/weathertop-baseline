@@ -1,0 +1,38 @@
+Reading(r1):
+  code: 150
+  temp: 21.0
+  windSpeed: 20.5
+  pressure: 1000
+
+Reading(r2):
+  code: 130
+  temp: 26.0
+  windSpeed: 1.8
+  pressure: 1006
+
+Reading(r3):
+  code: 120
+  temp: 15.0
+  windSpeed: 6.8
+  pressure: 999
+
+Reading(r4):
+  code: 112
+  temp: 26.0
+  windSpeed: 1.8
+  pressure: 1002
+
+Station(s1):
+  location: Tramore
+  readings:
+  - r1
+  - r2
+
+Station(s2):
+  location: Dunmore
+  readings:
+  - r3
+  - r4
+
+
+
