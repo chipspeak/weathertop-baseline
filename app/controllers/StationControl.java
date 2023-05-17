@@ -1,13 +1,10 @@
 package controllers;
 
-import java.util.List;
-
 import models.Station;
-import models.Reading;
 import play.Logger;
 import play.mvc.Controller;
 
-public class PlaylistCtrl extends Controller
+public class StationControl extends Controller
 {
     public static void index(Long id)
     {
